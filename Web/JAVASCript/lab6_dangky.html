@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<script>
+    function validation() {
+
+        var hoten = document.forms[0].hoten.value;
+
+        var male = document.getElementById("male");
+        var female = document.getElementById("female");
+
+        var sodt = document.forms[0].sodt.value;
+        var diachi = document.forms[0].diachi.value;
+        var mk = document.forms[0].matkhau.value;
+        var xnmk = document.forms[0].xnmatkhau.value;
+        //var tuoi = document.forms[0].tuoi.value;
+        if (hoten == "") {
+            alert("Họ tên không được để trống !");
+            return;
+        }
+        if (male.checked == false && female.checked == false) {
+            alert("Gioi tinh khong duoc de trong");
+            return;
+        }
+        if (sodt == "") {
+            alert("Bạn cần nhập số điện thoại !");
+            return;
+        }
+        if (isNaN(sodt) == true) {
+            alert("So dt khong hop le !");
+            return;
+        }
+        else {
+            sodt = Number(sodt);
+        }
+        if (diachi == "") {
+            alert("Bạn cần nhập địa chỉ !");
+            return;
+        } if (mk == "") {
+            alert("Bạn cần nhập mật khẩu !");
+            return;
+        } if (xnmk == "") {
+            alert("Bạn cần xác nhận lại mật khẩu !");
+            return;
+        }
+        alert("Du lieu hop le ! ");
+
+    }
+</script>
+
+<style>
+    form {
+        background-color: rgb(241, 210, 215);
+        width: 250px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px blue;
+        padding: 10px;
+        margin: 0 auto;
+
+    }
+
+    .khungdangky {
+        margin: 0px auto;
+        color: red;
+
+    }
+
+    .dangky {
+        padding: 5px;
+        margin: 0 auto;
+        margin-left: 18px;
+    }
+
+    .dangky>input:hover {
+        color: blue;
+    }
+</style>
+
+<body>
+    <form action="#" method="post" onsubmit="return validation();">
+        <div class="khungdangky">
+            <div class="dangky"> Họ tên: <br></n:b> <input type="text" name="hoten" /></div>
+            <div class="dangky">Gioi tinh: <br> <input type="radio" name="gioitinh" id="male">Nam
+                <input type="radio" name="gioitinh" id="female">Nu</div>
+            <div class="dangky"> Số ĐT: <br> <input type="text" name="sodt" /></div>
+            <div class="dangky"> Địa Chỉ: <br> <input type="text" name="diachi"></div>
+            <div class="dangky">Mật khẩu: <br><input type="password" name="matkhau"></div>
+            <div class="dangky">Xác nhận MK: <br> <input type="password" name="xnmatkhau"></div>
+            <hr>
+            <div class="dangky"> <input type="submit" value="Gửi" /></div>
+        </div>
+    </form>
+</body>
+
+</html>

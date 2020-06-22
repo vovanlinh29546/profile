@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>bài 1</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript">
+		function blue(i){
+			var store = document.getElementById("Store");
+			oBlue = store.rows[i];
+			oBlue.style.color = "blue";
+		}	
+		var sumMoney = 0;
+		function them(i){
+			var store = document.getElementById("Store");
+			var cart = document.getElementById("Cart");
+			var index = cart.rows.length;
+			var row = cart.insertRow(index);
+			var cell1 = row.insertCell(0);
+			var cell2 = row.insertCell(1);
+			var cell3 = row.insertCell(2);
+			cell1.innerHTML =store.rows[i].cells[0].innerHTML;
+			cell2.innerHTML =store.rows[i].cells[1].innerHTML;
+			cell3.innerHTML ="<button onclick='xoa(this);delColor("+i+");'>Xóa</button>";
+			//Đổi màu ở đây
+			blue(i);
+			
+			//Tinh tong
+			var vTotal = document.getElementById("total");
+			var vMoney = store.rows[i].cells[1].innerHTML.toString();
+			vMoney = Number(vMoney.substr(1,vMoney.length-1))
+			sumMoney += vMoney;
+			vTotal.innerHTML = sumMoney.toFixed(2);	
+		}	
+        function xoa(element){
+			//alert(element.innerHTML);
+            var parent = element.parentNode.parentNode;
+            //var gt = Number(parent.cells.item(1).innerHTML.split(".").join("")) * Number(parent.cells.item(2).innerHTML);
+		    var index = parent.rowIndex;
+		
+            document.getElementById("Cart").deleteRow(index);
+			
+			//Tinh lai tong
+			
+        }
+		function delColor(i){
+			var store = document.getElementById("Store");
+			oBlue = store.rows[i];
+			oBlue.removeAttribute("style");
+		}
+    </script>
+</head>
+<body>
+</table>
+    <h1>Cửa hàng bánh chocolate</h1>
+    <h2>Các loại chocolate</h2>
+    <table id="Store" width="300" height="200" border="1">
+        <tr>
+            <td>
+            Chocolate Truffles
+            </td>
+            <td>$34.99</td>
+            <td>
+            <button onClick="them(0);">Thêm</button>
+            </td>
+        </tr>	
+        <tr>
+            <td>
+            Pecan Caramel Duets
+            </td>
+            <td>$14.99</td>
+            <td>
+            <button onClick="them(1);">Thêm</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            Chocolate Covered Cherries
+            </td>
+            <td>$28.99</td>
+            <td>
+            <button onClick="them(2);">Thêm</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            White Chocolate Ganaches
+            </td>
+            <td>$22.99</td>
+            <td>
+            <button onClick="them(3);">Thêm</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            Chocolate Mints
+            </td>
+            <td>$17.99</td>
+            <td>
+            <button onClick="them(4);">Thêm</button>
+            </td>
+        </tr>
+         <tr>
+            <td>
+            Chocolate Caramels
+            </td>
+            <td>$14.99</td>
+            <td>
+            <button onClick="them(5);">Thêm</button>
+            </td>
+        </tr>
+         <tr>
+            <td>
+            Chocolate Toffee Bark
+            </td>
+            <td>$9.99</td>
+            <td>
+            <button onClick="them(6);">Thêm</button>
+            </td>
+        </tr>
+    </table>
+    <h2>Giỏ hàng của bạn</h2>
+    <table id="Cart" width="300" border="1">
+      <tr>
+       
+      </tr>
+    </table>
+    <p id="total"></p>
+</body>
+</html>

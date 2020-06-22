@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="lab7_bai2.css" rel="stylesheet" />
+    <script>
+        // tao 2 doi tuong image
+    var anh1 =new Image();
+    var anh2 =new Image();
+
+    function load(){
+        anh1.src="images/ngoctrinh1.jpg";
+        anh2.src="images/ngoctrinh2.jpg";
+    }
+    function over(){
+        document.tenanh.src=anh1.src;
+    }
+    function out(){
+        document.tenanh.src=anh2.src;
+    }
+
+    </script>
+</head>
+<body onload="load();" >
+
+    <div class="col-25">
+        <div class="prod">
+            <div class="name">ÁO DÀI ABC</div>
+            <img name="tenanh" src="images/ngoctrinh3.jpg" width="300px" height="400px" onmouseover="over();" onmouseout="out();">
+        </div>
+    </div>
+
+
+   
+
+
+
+
+</body>
+</html>

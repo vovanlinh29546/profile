@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="menuchong.css">
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="JavaScripts/jquery-2.1.1.min.js"></script>
+    <script src="jquery-ui-1.10.4/js/jquery-ui-1.10.4.min.js"></script>
+    <script>
+        $(document).ready(function(e) {
+            $('#menu').accordion();
+        });
+    </script>
+
+
+    <style>
+       
+        iframe[name=page] {
+	width:100%;
+    min-height:400px;
+
+}
+iframe[name=page1]{
+width: 150px;
+
+        }
+
+        h1 {
+        text-align: center;
+        color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <img src="images/O00Kbanner.jpg" alt="" width="100%">
+
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="#">Hidden brand</a>
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+
+
+        <div class="row">
+            
+            <div class="col-9">
+                    <iframe name="page" scrolling="auto" frameborder="0" src="slide.html" height="1000px"></iframe>
+
+               
+            </div>
+            
+
+                
+            <div class="col-3" >
+                <iframe name="page1" scrolling="auto" frameborder="0" src="dongho.html"></iframe>
+
+                <h1>Menu</h1>
+                <div class="list-group">
+                    <a href="lab4_cau5_sinhvien.html" target="page"  class="list-group-item list-group-item-action">Thông tin sinh viên</a>
+
+                    <a href="lab4_cau3_cho.html" target="page" class="list-group-item list-group-item-action list-group-item-primary"> Chó </a>
+                    <a href="lab4_cau4_meo.html" target="page" class="list-group-item list-group-item-action list-group-item-secondary">Mèo</a>
+                    <a href="lab6_login.html" class="list-group-item list-group-item-action list-group-item-success">Đăng nhập </a>
+                    <a href="lab6_cau1_firs_back_next_last.html" target="page" class="list-group-item list-group-item-action list-group-item-danger">First-next-last-back</a>
+                    <a href="lab7_bai2.html" target="page" class="list-group-item list-group-item-action list-group-item-warning">Over show</a>
+                    <a href="nhapchu_rahinh.html" target="page" class="list-group-item list-group-item-action list-group-item-info">Click tên hình ra ảnh</a>
+                    <a href="lab7_cau7_find_gia_dropdownlist.html" target="page" class="list-group-item list-group-item-action list-group-item-light">Tìm kiếm giá sản phẩm</a>
+                    <a href="khuyenmai.html" target="page" class="list-group-item list-group-item-action list-group-item-dark">Sản phẩm đang khuyến mãi</a>
+                </div>
+                <h1>Menu chồng</h1>
+
+                <div id="menu">
+                    <h3 class="menuHead">Menu 1 ✎</h3>
+                    <div class="menuDiv" id="menu1">
+                        <a href="lab7_cau4_nut_may_tinhh.html" target="page">May tinh 2 so</a><br>
+                        <a href="lab5_cau_1_meovachuot.html" target="page">Meo va chuot</a><br>
+                        <a href="lab7_cau5_max3_so.html" target="page">Max 3 so</a><br>
+                        <a href="lab5_cau5_tictactoe.html" target="page">Trò chơi</a>
+                    </div>
+                    <h3 class="menuHead">Menu 2 ✎</h3>
+                    <div class="menuDiv" id="menu2">
+                        <a href="lab5_Cau2_traicayvahoa.html" target="page"> Mo hinh cay dom hoa va qua</a><br>
+                        <a href="lab5_cau3_progress_bar_simply.html" target="page">Giao diện progress bar simple</a>
+                    </div>
+                    <h3 class="menuHead">Menu 3✎</h3>
+                    <div class="menuDiv" id="menu3">
+                    <a href="lab6_sanpham_gia.html" target="page"> San pham - Gia - So luong</a><br>
+                    <a href="giohang.html" target="page">Giỏ hàng mua sản phẩm</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        
+
+    </div>
+
+</body>
+
+</html>

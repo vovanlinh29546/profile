@@ -1,0 +1,50 @@
+<body>
+    <div id="dHoa">
+        <p>Hoa Hong</p>
+        <p> Hoa Lan</p>
+        <p> Hoa Cam chuong</p>
+    </div>
+    <hr>
+    <div id="dTraicay">
+        <p>Qua cam</p>
+        <p>Qua buoi</p>
+        <p>Qua man</p>
+        <p>Qua chuoi</p>
+        <p>Qua xoai</p>
+        <p>Qua chanh</p>
+    </div>
+    <script type="text/javascript">
+        var a = document.getElementById("dHoa");
+        var b = document.getElementById("dTraicay");
+        document.writeln("<br> Hoa : " + a.nodeName);
+        document.writeln("<br> Gia tri node : " + a.nodeValue);
+
+        document.writeln("<br> Node cha : " + a.parentNode.nodeName);
+        document.writeln("<br> Node con dau tien : " + a.firstElementChild.nodeName);
+        document.writeln("<br> Gia tri con dau tien : " + a.firstElementChild.innerHTML);
+
+
+        document.writeln("<br> Node con cuoi cung : " + a.lastElementChild.nodeName);
+        document.writeln("<br> Node con cuoi cung : " + a.lastElementChild.innerHTML);
+
+
+        document.writeln("<br> Node con thu 2 : " + a.childNodes[5].nodeName);
+        document.writeln("<br> Gia tri con thu 2 : " + a.childNodes[5].innerHTML);
+
+        document.writeln("<hr><br> Trai cay : " + b.nodeName);
+        document.writeln("<br> gia tri trai cay :  " + b.nodeValue);
+        document.writeln("<br> Node cha : " + b.parentNode.nodeName);
+
+        document.writeln("<br> Node con dau tien : " + b.firstElementChild.nodeName);
+        document.writeln("<br> Gia tri con dau tien : " + b.firstElementChild.innerHTML);
+
+
+        document.writeln("<br> Node con cuoi cung : " + b.lastElementChild.nodeName);
+        document.writeln("<br> Node con cuoi cung : " + b.lastElementChild.innerHTML);
+
+        document.writeln("<br> Node con thu 2 : " + b.childNodes[5].nodeName);
+        document.writeln("<br> Gia tri con thu 2 : " + b.childNodes[5].innerHTML);
+        document.writeln("<br> Gia tri con thu 3 : " + b.childNodes[7].innerHTML);
+        document.writeln("<br> Gia tri con thu 4 : " + b.childNodes[9].innerHTML);
+    </script>
+</body>

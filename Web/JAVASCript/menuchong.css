@@ -1,0 +1,16 @@
+
+#menu {
+	width: 250px;
+	height: 250px;
+    border: solid 2px rgb(108, 108, 218);
+    padding: 3px;
+    background-color: rgb(247, 207, 214);
+}
+.menuHead{
+	border: solid 1px back;
+    background-color: rgb(243, 208, 214);
+    color: blue;
+}
+.menuDiv {
+	border-bottom: dotted 1px black;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="lab7_bai2.css">
+    <script>
+        var mang_anh = [];
+        var index = 0;
+        function loadanh() {
+            for (var i = 0; i < 6; i++) {
+                mang_anh[i] = new Image();
+                mang_anh[i].src = "images/ngoctrinh" + i + ".jpg";
+            }
+        }
+        function first() {
+            index = 0;
+            document.getElementById("ngoctrinh").src = mang_anh[index].src;
+        }
+        function back() {
+            if (index > 0) {
+                index = index - 1;
+                document.getElementById("ngoctrinh").src = mang_anh[index].src;
+            }
+        }
+        function next() {
+            if (index < 5) {
+                index = index + 1;
+                document.getElementById("ngoctrinh").src = mang_anh[index].src;
+            }
+        }
+        function last() {
+
+            index = 5;
+            document.getElementById("ngoctrinh").src = mang_anh[index].src;
+
+        }
+    </script>
+
+</head>
+
+<body onload="loadanh();">
+        <div class="col-25">
+                <div class="prod">
+                    <div class="name">ÁO DÀI ABC</div>
+    <img width="360px" height="400px" id="ngoctrinh" src="images/ngoctrinh0.jpg" alt=""><br>
+
+    <input type="button" value="First" onclick="first();">
+    <input type="button" value="Back" onclick="back();">
+    <input type="button" value="Next" onclick="next();">
+    <input type="button" value="Last" onclick="last();">
+</div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+﻿.col-25 {
+    width: 50%;
+    float: center;
+    margin: 0 auto;
+}
+.prod {
+    border-radius: 10px;
+    box-shadow: 0 0 5px gray;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    position: relative;
+}
+.prod > .name {
+        font-variant: small-caps;
+        color: orangered;
+    }
+    .prod > .image {
+        max-width: 98%;
+        height: 120px;
+        margin-bottom:10px;
+    }
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+
+        function validation() {
+            var username = document.forms[0].txtUsername.value;
+            var password = document.forms[0].txtPassword.value;
+            if (username == "") {
+                alert("Username can not be empty !");
+                return;
+            }
+            if (password == "") {
+                alert("Password can not be empty !");
+                return;
+            }
+        }
+    </script>
+    <style>
+form{
+            background-color:white;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px blue;
+            padding: 20px;
+            margin: 0 auto;
+            
+        }
+
+        .login{margin: 0px auto;
+        color: red;
+        }
+        .dangnhap{
+            margin: 0 auto;
+            padding: 5px;
+        }
+        div>input:hover{color: violet;
+
+        }
+        .linkdangky{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#" method="post" onsubmit="return validation();">
+<div class="login">
+       <div class="dangnhap"><input type="text" name="txtUsername" placeholder="Ussername"></div>
+       <div class="dangnhap"><input type="password" name="txtPassword" placeholder="Passworld"></div>
+       <div class="dangnhap"> Nhớ tài khoản?<input type="checkbox" name="txtrememberme"></div>
+       <div class="dangnhap"> <input type="submit" value="Login" />
+        <a href="lab6_dangky.html" class="linkdangky">Bạn chưa có tài khoản.</a>
+    </div>
+  
+    </div>
+    </form>
+</body>
+
+</html>

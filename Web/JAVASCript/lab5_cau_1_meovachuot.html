@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mèo ăn chuột</title>
+    <script>
+        function Chuot(nang) {
+            this.trongluongchuot = nang;
+        }
+        function Meo(nang) {
+            this.trongluongmeo = nang;
+            this.an = function (trongluongchuot) {
+                this.trongluongmeo = this.trongluongmeo + trongluongchuot;
+                alert("Sau khi an : " + this.trongluongmeo);
+            }
+        }
+        function cau1meovachuot() {
+            // tạo 1 đối tượng mèo
+            var a = new Meo(99);//10kg
+            var b = new Chuot(5);//5kg   
+            alert("trọng lượng mèo : " + a.trongluongmeo);
+            alert("trong luong chuot : " + b.trongluongchuot);
+            a.an(b.trongluongchuot);//truyen voa trong luong cua chuot
+        }
+    </script>
+    <style>
+        img {
+            border: thin solid red;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="images/meo.jpg" onclick="cau1meovachuot();" width="400px" height="400px">
+    <img src="images/chuot.jpg" onclick="cau1meovachuot();" width="400px" height="400px">
+
+
+</body>
+
+</html>

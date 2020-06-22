@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<body>
+<table border="1">
+    <th>Tên San Pham</th>
+    <th>Don Gia</th>
+    <tr>
+        <td>Ao dai Thai Tuan </td>
+        <td class="gia">10</td>
+    </tr>
+    <tr>
+        <td>Ao dai Cach Tan</td>
+        <td class="gia">4</td>
+    </tr>
+    <tr>
+        <td>Ao Dai ABC</td>
+        <td class="gia">5</td>
+    </tr>
+    <tr>
+        <td>Ao Dai In 3D</td>
+        <td class="gia">1</td>
+    </tr>
+</table>
+<script type="text/javascript" src="js/jquery-1.6.4.min.js"  ></script>
+<script type="text/javascript">
+    function ham1() {
+        var a = document.getElementById("cbogia").value;
+        //document.write(a);
+        // cho ve mau binh thuong
+        $(".gia").each(function () {
+                $(this).parent().css('font-weight', 'normal');
+        });
+        //////////////////////
+        if (a == "nhohon2") {
+            $(".gia").each(function () {
+                if ($(this).text() < 2) {
+                    $(this).parent().css('color', 'blue');
+                }
+            });
+        }
+        else if (a == "tu2den5") {
+            $(".gia").each(function () {
+                if ($(this).text() >= 2 && $(this).text()<=5) {
+                    $(this).parent().css('color', 'red');
+                }
+            });
+        }
+        else if (a == "lonhon5") {
+            $(".gia").each(function () {
+                if ($(this).text() > 5) {
+                    $(this).parent().css('color', 'violet');
+                }
+            });
+        }
+    }
+</script>
+    <p>
+        &nbsp;</p>
+    <select id="cbogia" name="D1" onchange="ham1();">
+        <option value="nhohon2" selected="selected">nho hon 2</option>
+        <option value="tu2den5">tu 2 den 5</option>
+        <option value="lonhon5">lon hon 5</option>
+    </select>
+</body>
+</html>

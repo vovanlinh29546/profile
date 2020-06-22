@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script src="jquery-2.1.1.min.js"></script>
+</head>
+<script>
+	$(document).ready(function(e) {
+        $("div").click(function(){
+			alert("Clicked!");
+			$("div p").hide();
+			$(this).css('color','green');
+		});
+    });
+</script>
+<body>
+<div class="myDiv" style="color:red;">
+	<H1>Heading</H1>
+	<p>
+	This my Div
+    </p>
+</div>
+</body>
+</html>

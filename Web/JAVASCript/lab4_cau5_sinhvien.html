@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         var sinhvien = new Object();// sinh ra 1 doi tuong
+//thuoc tinh
+         sinhvien.ten="Vo Van Linh";
+         sinhvien.tuoi= 19;
+         sinhvien.gioitinh="nam";
+         sinhvien.toan=9;
+         sinhvien.cntt=9;
+         //hanh dong (ham)
+         sinhvien.xuat = function()
+         {
+            alert("\n thong tin sinh vien : "+
+         "\n Ten : "+sinhvien.ten+
+         "\n Tuoi : "+sinhvien.tuoi+
+         "\n gioi tinh : "+sinhvien.gioitinh
+         );
+
+             
+         }
+         //xuat thong tin ve doi tuong cho\
+
+         sinhvien.dtb=function(){
+            alert("Diem tb mon : "+(sinhvien.toan+sinhvien.cntt)/2.0);
+         }
+
+         // goi hanh dong
+         sinhvien.xuat();
+         sinhvien.dtb();
+        </script>
+    
+</body>
+</html>

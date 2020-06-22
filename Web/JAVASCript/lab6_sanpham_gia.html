@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="sanpham_gia_sl.css">
+    <script>
+        function validate() {
+            var ProductName = document.forms[0].sanPham.value;
+            var Price = document.forms[0].price.value;
+            var Quantity = document.forms[0].quantity.value;
+
+            if (ProductName == "") {
+                alert(" Ten san pham khong duoc de trong!");
+                return;
+            }
+            if (isNaN(Price) == true) {
+                alert("Gia phai la so !");
+                return;
+            }
+            else {
+                Price = Number(Price);
+                if ((Price < 0) || (Price > 100)) {
+                    alert("Gia phai trong khoan tu 0 ---> 100 ! ");
+                    return;
+                }
+            }
+            if (isNaN(Quantity) == true) {
+                alert("Gia phai la so !");
+                return;
+            }
+            else {
+                Quantity = Number(Quantity);
+                if (Quantity <= 0) {
+                    alert("So luong phai lon hon 0 ! ");
+                    return;
+                }
+            }
+
+
+            alert("Du lieu hop le ! ");
+        }
+    </script>
+</head>
+
+<body>
+    <form class="khungsp" action="#" method="post" onsubmit="return validate();">
+        <br>Product Name: <br> <input type="text" name="sanPham">
+        <br>Price: <br><input type="text" name="price">
+        <br>Quantity: <br><input type="text" name="quantity">
+        <br> <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>

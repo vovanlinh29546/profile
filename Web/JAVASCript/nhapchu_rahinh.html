@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="lab7_bai2.css" rel="stylesheet" />
+    <script>
+
+        function show(hinhanh) {
+            var a = document.getElementById("ngoctrinh");
+            a.innerHTML = "<img src='" + hinhanh + "' width ='300px;' height='300px;'/>";
+        }
+    </script>
+</head>
+
+<body onload="show('images/ngoctrinh4.jpg');">
+
+    <div class="col-25">
+        <div class="prod">
+            <div class="name">ÁO DÀI ABC</div>
+            <div id="ngoctrinh">
+
+            </div>
+
+            <input type="button" value="ngoctrinh1" onclick="show('images/ngoctrinh1.jpg');">
+            <input type="button" value="ngoctrinh2" onclick="show('images/ngoctrinh2.jpg');">
+            <input type="button" value="ngoctrinh3" onclick="show('images/ngoctrinh3.jpg');">
+
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
