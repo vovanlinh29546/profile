@@ -1,0 +1,231 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container { width: 95%;
+    height: auto;
+     margin: 0pt auto 0pt auto;
+    }
+article {width: 100%; }
+aside {width: 20%; float: left; }
+.col-9 {width: 80%; float:right;}
+footer {width: 100%; float: left;
+    border: solid 1px #0ff;
+    margin-top: 10px;}
+
+.topnav {
+    overflow: hidden;
+    background: #000000;
+    box-shadow: 0 1 1px #CCCCCC;
+    
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background: #91b9ee;
+    
+}
+
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
+}
+.bannersoonyan{
+    margin-top: 15px;
+}
+.list-group-1{
+    margin-top: 10px;
+    margin-bottom: 300px;
+
+    
+}
+.list-group-2{
+    margin-top: 50px;
+    
+}
+
+  #slider{
+    width: 100%;
+    margin: 7px auto;
+    position: relative;
+    overflow:hidden;
+}
+.slide{
+    float:left;
+    text-align:center;
+}
+.slide img{
+	width: 250px;
+height: 200px;
+}
+#slider1{
+    width: 100%;
+    position: relative;
+    overflow:hidden;
+}
+.slide1{
+    float:left;
+    text-align:center;
+}
+.slide1 img{
+	width: 250px;
+height: 300px;
+}
+
+
+.list-group-3{
+    margin-top: 450px;
+    
+}
+.list-group-3 img{
+    margin: 5px 10px 5px 5px; /*margin between images*/
+width: 100px;
+height: 100px;
+float: left;
+}
+.gia{
+    margin-left: 110px;
+}
+.list-group-1 a{
+    float: left;
+    width: 100%;
+border: solid 1px rgb(253, 138, 130);
+    display: block;
+    line-height: 40px;
+    text-decoration: none;
+    font-size: 17px;
+
+}
+.menuitem:hover {
+    background: #91b9ee;
+}
+.list-group-2 a{
+    float: left;
+    width: 100%;
+    display: block;
+    line-height: 40px;
+    text-decoration: none;
+    font-size: 17px;
+    border: solid 1px rgb(253, 138, 130);
+    
+}
+.list-group-3 a{
+    float: left;
+    width: 100%;
+    display: block;
+    line-height: 40px;
+    text-decoration: none;
+    font-size: 17px;
+    border: solid 1px rgb(253, 138, 130);
+    
+}
+.tensp {
+    margin: 0px;
+    color: #1a1810;
+    margin-top: 5px;
+}
+.tensp:hover{
+    color: rgb(55, 197, 197);
+}
+.gia {
+
+    color: #f00;
+}
+    .gia > del {
+        color: #7e6d7c;
+    }
+.menuitem {
+background-color: #e6dada;
+    list-style-type: none;
+    color: #000000;
+
+  }
+  .menuitem1{
+      color: rgb(244, 249, 250);
+      background-color: #e91e63;
+      font-size: 15px;
+  }
+  .menuitem2{
+    color: rgb(244, 249, 250);
+    background-color: #3844f5;
+    font-size: 15px;
+}
+.ft {
+    position:relative;
+    width: 21%;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    float: left;
+    line-height: 20px;
+    text-decoration: none;
+}
+.ft a{text-decoration: none;
+color: rgb(82, 71, 71);}
+.ft a:hover{
+    color: #3844f5;
+}
+
+@media screen and (max-width: 800px) {
+    .topnav a:not(:first-child) {
+        display: none;
+        outline-color: #ffffff;
+        outline-style: auto;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .topnav.responsive {
+        position: relative;
+        
+    }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        
+    }
+}
+@media screen and (max-width: 800px) {
+    header,.container,article,aside,.col-9 {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+.slide,.list-group-1,.list-group-2,.list-group-3{
+    width: 95%;
+}
+.list-group-1,.list-group-2,.list-group-3{
+    width: 95%;
+    margin: 0 auto;
+}
+.slide1{
+    width: 100%
+}
+.ft{
+    width: 100%;
+}
+  }

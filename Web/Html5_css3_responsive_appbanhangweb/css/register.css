@@ -1,0 +1,19 @@
+.group{
+
+    width:400px ;
+    height: 400px;
+
+padding: 5px;
+}
+.name{
+
+    text-align: right;
+    min-width: 40px;
+}
+
+.chonchude{
+float: right;
+}
+
+
+

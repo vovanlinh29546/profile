@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="register.css" rel="stylesheet" type="text/css" />
+</head>
+
+
+<script>
+    function validation() {
+        var html5cb = document.getElementById("html5cb").checked;
+        var html5nc = document.getElementById("html5nc").checked;
+        var css3cs = document.getElementById("css3cs").checked;
+        var css3nc = document.getElementById("css3nc").checked;
+
+
+        if((html5cb=="")&&(html5nc=="")&&(css3cs=="")&&(css3nc=="")){
+    alert("Bạn cần chọn chủ đề");
+    return false;
+}
+    }
+
+
+
+</script>
+
+<body>
+    <form action="#" method="POST" class="group" id="contactform" >
+        <legend> Mời Bạn Đăng Ký</legend>
+        <hr>
+        <table>
+            <tr>
+                <td class="name"> <label>Ten Dang Nhap:</label></td>
+                <td> <input type="text" name="ten" size="30" required></td>
+            </tr>
+            <tr>
+                <td class="name"> <label> Mật khẩu: </label></td>
+                <td><input type="password" name="mk" size="30" required></td>
+
+            </tr>
+            <tr>
+                <td class="name"> <label> Email: </label></td>
+                <td><input type="email" name="email" size="30" required></td>
+            </tr>
+            <tr>
+                <td class="name"> <label> Thanh Pho:</label></td>
+                <td> <input list="city" class="form-control" name="tp" size="30" required>
+                    <datalist id="city">
+                        <option>Ho Chi Minh</option>
+                        <option>Hai Phong</option>
+                        <option>Da Nang</option>
+                        <option>Hue</option>
+                        <option>Khanh Hoa</option>
+                    </datalist></td>
+            </tr>
+            <tr>
+                <td class="name"> <label> Do tuoi trung binh: </label></td>
+                <td> <input type="range" name="tuoi" id="old" min="18" max="45" value="20"></td>
+            </tr>
+        </table>
+
+
+        <td class="name"> <label> Ban muon theo doi bai viet chu de nao </label> </td>
+
+        <table class="chonchude">
+
+            <tr>
+
+                <td> <input type="checkbox"  id="html5cb" value="html5cban">HTML 5 co ban</td>
+                <td> <input type="checkbox"  id="html5nc" value="html5ncao">HTML 5 nang cao</td>
+            </tr>
+
+            <tr>
+
+                <td> <input type="checkbox" id="css3cs" value="css3cso">CSS3 co so</td>
+                <td> <input type="checkbox"  id="css3nc" value="css3ncao">CSS3 nang cao</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td> <input type="reset" value="Lam Lai"  />
+                    <input type="submit" value="Dang Ky" onclick="return validation();" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

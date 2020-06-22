@@ -1,0 +1,158 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+.container {
+    height: auto;
+    border: solid 1px #0ff;
+    margin: 0 auto;
+    text-decoration: none;
+}
+.bannersony{
+    padding: 10px 10px;
+    margin: 0 auto;
+}
+.sp {
+    position:relative;
+    width: 250px;
+    height: 320px;
+    border: solid 1px #f00;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 10px;
+    float: left;
+    
+    text-align: center;
+    text-decoration: none;
+}
+.sp a{text-decoration: none;}
+/*hover*/
+.sp img{
+-webkit-transition-duration: 0.5s; /*Webkit: Animation duration*/
+-moz-transition-duration: 0.5s; /*Mozilla duration version*/
+-o-transition-duration: 0.5s; /*Opera duration version*/
+margin: 0 10px 5px 0; /*margin between images*/
+width: 200px;
+height: 200px;
+}
+.sp img:hover{
+-webkit-transform:scale(0.8); /*Webkit: Scale up image to 1.2x original size*/
+-moz-transform:scale(0.8); /*Mozilla scale version*/
+-o-transform:scale(0.8); /*Opera scale version*/}
+/*tensp*/
+
+.tensp {
+    margin: 0px;
+    color: #1a1810;
+    margin-top: 5px;
+    text-decoration: none;
+}
+.tensp:hover{
+    color: rgb(55, 197, 197);
+}
+.gia {
+    margin: 0px;
+    color: #f00;
+}
+    .gia > del {
+        color: #7e6d7c;
+    }
+    .mua{
+        color: rgb(251, 253, 253);
+        background-color: #1a1810;
+        padding: 10px;
+        border: 0 0 black;
+        text-decoration: none;
+        width: 80px;
+        height: 20px;
+        margin: 0 auto;
+    }
+    .mua:hover{
+        background-color: rgb(55, 197, 197);
+    }
+.km {
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    top: 40px;
+    left: 190px;
+    background-color: #f00;
+    color: #facef4;
+    font-weight: bold;
+    text-align: center;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: -1px 2px 12px 0px rgba(32,103,245,1);
+    -moz-box-shadow: -1px 2px 12px 0px rgba(32,103,245,1);
+    box-shadow: -1px 2px 12px 0px rgba(32,103,245,1);
+}
+.sl {
+    width: 80px;
+    height: 20px;
+    line-height: 20px;
+    position: absolute;
+    top: 50px;
+    background-color: white;
+    color: green;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 0 1px 0 ;
+}
+.slorder {
+    width: 110px;
+    height: 40px;
+    line-height: 20px;
+    position: absolute;
+    top: 50px;
+
+    background-color: white;
+    color: rgb(214, 39, 26);
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 0 1px 0 ;
+}
+.danhmuc h2{
+    padding: 10px 10px;
+    margin: 0 auto;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .flex-container > a {
+color: white;
+background-color: rgb(74, 115, 175);
+    margin: 10px;
+font-size: 20px;
+text-decoration: none;
+border-radius: 3px;
+padding: 5px;
+  }
+  .flex-container > a:hover {
+background-color: #272631;
+      }
+@media screen and (max-width: 800px) {
+    .sp {
+      width: 80%;
+      margin:center;
+      text-align: center;
+      margin-bottom: 10px; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+    .bannersony{
+width: 95%;
+height: 50%;
+
+
+/* The width is 100%, when the viewport is 800px or smaller */
+      }
+    
+  }
+
+$(document).ready(function(){
+  $('#zoom1').zoom();
+});
