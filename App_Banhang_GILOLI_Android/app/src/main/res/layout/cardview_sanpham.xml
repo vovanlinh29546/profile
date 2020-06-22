@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contentPadding="10dp"
+        android:id="@+id/cardviewSP">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <ProgressBar
+                    android:id="@+id/progressbarSP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/ImageViewSP"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_launcher_background" />
+            </FrameLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ImageViewSP">
+
+                <TextView
+                    android:id="@+id/txtTenSp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="Kiểm tra kết nốiaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa internet"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/txtGiaSp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtTenSp"
+                    android:text="50.000đ"
+                    android:textColor="#ff0000"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

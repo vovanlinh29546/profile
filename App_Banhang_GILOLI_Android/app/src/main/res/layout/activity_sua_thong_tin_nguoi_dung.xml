@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.giloli.Activity.SuaThongTinNguoiDungActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:titleTextColor="#ffffff"
+        android:background="#ff8008"
+        android:id="@+id/toolbar_suathongtinnguoidung">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgBackSTTND"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_back_black_24dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Sửa thông tin"
+                android:layout_toRightOf="@id/imgBackSTTND"
+                android:textSize="25dp"
+                android:textColor="#fff"
+                android:layout_height="wrap_content">
+
+            </TextView>
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:layout_margin="7dp"
+        android:inputType="text"
+        android:hint="Cá nhân"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+
+        android:id="@+id/input_edit_hoten"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:importantForAutofill="noExcludeDescendants"
+            android:inputType="text"
+            android:id="@+id/edt_editHoTen"
+            android:hint="Họ tên"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+
+            android:id="@+id/edt_editEmail"
+            android:text="Email"
+            />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edt_editNgaySinh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:importantForAutofill="noExcludeDescendants"
+            android:drawableRight="@drawable/icon_calendar"
+            android:focusable="false"
+            android:hint="Ngày sinh"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="17dp"
+        android:textAllCaps="false"
+        android:layout_margin="15dp"
+        android:text="Lưu Thay Đổi"
+        android:id="@+id/btnLuuThayDoi"
+        android:textColor="#ffffff"
+        android:background="#ff8008"/>
+
+
+</LinearLayout>

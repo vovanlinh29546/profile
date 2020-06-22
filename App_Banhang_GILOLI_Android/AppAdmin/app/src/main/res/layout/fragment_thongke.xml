@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    >
+    <Button
+        android:id="@+id/btnThongKe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thống kê tiền"
+        android:background="@drawable/bg_button_thongke"
+        android:textColor="#ffff"/>
+    <Button
+        android:id="@+id/btnTop10d"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Top 10 mặt hàng bán chạy"
+        android:background="@drawable/bg_button_thongke"
+        android:textColor="#ffff"
+        android:layout_marginTop="15dp"/>
+    <Button
+        android:id="@+id/btnTop10e"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Top 10 mặt hàng bán không được"
+        android:background="@drawable/bg_button_thongke"
+        android:textColor="#ffff"
+        android:layout_marginTop="15dp"/>
+    <Button
+        android:id="@+id/btnTop10lLove"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Top 10 mặt hàng yêu thích"
+        android:background="@drawable/bg_button_thongke"
+        android:textColor="#ffff"
+        android:layout_marginTop="15dp"/>
+    <Button
+        android:id="@+id/btnHetHang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mặt hàng gần hết hàng"
+        android:background="@drawable/bg_button_thongke"
+        android:textColor="#ffff"
+        android:layout_marginTop="15dp"/>
+</LinearLayout>

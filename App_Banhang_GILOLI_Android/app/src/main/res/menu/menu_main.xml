@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/bottom_trangchu"
+        android:title="Trang chủ"
+        android:icon="@drawable/ic_navi_trangchu"
+        />
+    <item
+        android:id="@+id/bottom_danhmuc"
+        android:icon="@drawable/ic_navi_danhmuc"
+        android:title="Danh mục"
+        />
+    <item android:id="@+id/bottom_timkiem"
+        android:icon="@drawable/ic_navi_search"
+        android:title="Tìm kiếm"
+       />
+
+
+
+    <item android:id="@+id/bottom_thongbao"
+        android:icon="@drawable/ic_navi_thongbao"
+        android:title="Thông báo"
+      />
+
+
+    <item android:id="@+id/bottom_canhan"
+        android:title="Cá nhân"
+        android:icon="@drawable/ic_navi_canhan"
+      />
+</menu>

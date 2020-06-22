@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.giloli.Activity.QuenMatKhauActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:titleTextColor="#ffffff"
+        android:background="#ff8008"
+        android:id="@+id/toolbar_forgotmk"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+
+        android:id="@+id/input_forgot_email"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:importantForAutofill="noExcludeDescendants"
+            android:inputType="text"
+            android:id="@+id/edt_forgotEmail"
+            android:hint="Email"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="17dp"
+        android:textAllCaps="false"
+        android:layout_margin="15dp"
+        android:text="Lấy Lại Mật Khẩu"
+        android:id="@+id/btnLaylaimk"
+        android:textColor="#ffffff"
+        android:background="#ff8008"/>
+
+</LinearLayout>

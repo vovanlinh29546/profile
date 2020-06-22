@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:contentPadding="10dp"
+        android:id="@+id/cardviewPT">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            <TextView
+                android:id="@+id/txtPtGiaoHang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giao hàng nhanh"
+                android:textSize="20dp"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/txtd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="đ"
+                android:textColor="#ff0000"
+                android:layout_marginLeft="15dp"
+                android:textSize="20dp"
+                android:layout_toRightOf="@id/txtPtGiaoHang"/>
+            <TextView
+                android:id="@+id/txtGiaTien"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="36.330"
+                android:textColor="#ff0000"
+                android:layout_toRightOf="@+id/txtd"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:id="@+id/txtSoNgayGiao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Giao hàng trong 2-3 ngày"
+                android:layout_below="@+id/txtPtGiaoHang"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"
+        />
+
+</LinearLayout>

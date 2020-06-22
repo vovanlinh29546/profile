@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "271177550307",
+    "firebase_url": "https://spartan-vertex-257700.firebaseio.com",
+    "project_id": "spartan-vertex-257700",
+    "storage_bucket": "spartan-vertex-257700.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271177550307:android:e3665c00a93a57939678d6",
+        "android_client_info": {
+          "package_name": "com.example.giloli"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAejxAAlRdVIFxJRjyEnKQBMd0I6ECLzP0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "271177550307-cn7r5qkbbrm6oi2fttrk9n31cb3r73g0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271177550307:android:40ab29c0282fcf2a9678d6",
+        "android_client_info": {
+          "package_name": "com.example.giloliadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "271177550307-k8lb6qlhiegb09p8353bvkfmqqudi0jk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.giloliadmin",
+            "certificate_hash": "c934dd3c51b6b557da6f4679520a2a503955ff9d"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAejxAAlRdVIFxJRjyEnKQBMd0I6ECLzP0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "271177550307-cn7r5qkbbrm6oi2fttrk9n31cb3r73g0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

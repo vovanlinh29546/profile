@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:contentPadding="10dp"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/txtMaHDCT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mã hoá đơn chi tiết: "
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/txtMaHDCT1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="acvcvc"
+                android:layout_toRightOf="@+id/txtMaHDCT"
+                android:textColor="#ff0000"/>
+            <TextView
+                android:id="@+id/txtMaSanPham"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtMaHDCT"
+                android:text="Mã sản phẩm: "
+                android:layout_marginTop="10dp"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/txtTenSanPham"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tên sản phẩm: "
+                android:layout_below="@+id/txtMaSanPham"
+                android:textColor="#000"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:id="@+id/txtTenSanPham1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sssssss"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_toRightOf="@+id/txtTenSanPham"
+                android:layout_below="@+id/txtMaSanPham1"
+                android:layout_marginTop="10dp"
+                android:textColor="#ff0000"/>
+            <TextView
+                android:id="@+id/txtMaSanPham1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="dddd"
+                android:textColor="#ff0000"
+                android:layout_toRightOf="@id/txtMaSanPham"
+                android:layout_below="@+id/txtMaHDCT"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:id="@+id/txtSoLuong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số lượng: "
+                android:layout_below="@+id/txtTenSanPham"
+                android:textColor="#000"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:id="@+id/txtSoLuong1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:layout_toRightOf="@id/txtSoLuong"
+                android:textColor="#ff0000"
+                android:layout_below="@+id/txtTenSanPham"
+                android:layout_marginTop="10dp"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

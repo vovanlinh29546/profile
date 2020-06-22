@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.giloli.Activity.NhanxetActivity"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:titleTextColor="#ffffff"
+        android:background="#ff8008"
+        android:id="@+id/toolbar_giohang"
+        android:layout_alignParentTop="true"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgBackNX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_back_black_24dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Nhận xét"
+                android:layout_toRightOf="@id/imgBackNX"
+                android:id="@+id/txttitleGH"
+                android:textSize="25dp"
+                android:layout_height="wrap_content"
+                android:textColor="#fff">
+
+            </TextView>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="10"
+    android:layout_margin="20dp"
+    >
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:id="@+id/img_nhanxet_url"
+        android:layout_weight="3"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_launcher_background"
+        ></ImageView>
+    <TextView
+        android:layout_weight="7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_nhanxet_tensp"
+        android:text="Ten sp"
+        ></TextView>
+</LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#CCCCCC"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đánh giá của bạn"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"></TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spn_nhanxet_danhgia"
+        android:importantForAutofill="noExcludeDescendants"
+        android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+        android:focusable="false"
+        android:hint="Chọn đánh giá"
+        android:layout_margin="10dp"
+        ></EditText>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Viết nhận xét sản phẩm"
+            android:id="@+id/edt_nhanxet"
+            android:layout_margin="10dp"></EditText>
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/btntienhanhNhanXet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nhận xét"
+        android:gravity="center"
+        android:background="#ff8008"
+        android:textColor="#fff"
+        android:layout_margin="10dp"/>
+</LinearLayout>

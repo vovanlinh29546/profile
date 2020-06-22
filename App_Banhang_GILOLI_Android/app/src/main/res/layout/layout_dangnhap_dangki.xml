@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:titleTextColor="#ffffff"
+        android:background="#ff8008"
+        android:id="@+id/toolbar_dangnhapdangki">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgBackDNDK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_back_black_24dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Đăng nhập/Đăng ký"
+                android:layout_toRightOf="@id/imgBackDNDK"
+                android:id="@+id/txttitleDNDK"
+                android:textSize="25dp"
+                android:textColor="#fff"
+                android:layout_height="wrap_content">
+
+            </TextView>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout_dndk"
+        android:background="#dcdcdc"
+        app:tabSelectedTextColor="#000000"
+        app:tabIndicatorColor="#ff8008"
+        app:tabTextColor="#343434"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager_dndk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

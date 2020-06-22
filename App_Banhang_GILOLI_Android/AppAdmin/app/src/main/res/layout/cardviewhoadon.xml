@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f2f2f2">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardviewHoaDon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="4dp"
+        android:clickable="true"
+        android:layout_margin="5dp"
+        app:contentPadding="5dp"
+        app:cardCornerRadius="10dp"
+        app:cardPreventCornerOverlap="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/txtTenNguoiNhanHD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trường Giang"
+                android:layout_centerHorizontal="true"
+                android:textColor="#ff0000"/>
+            <TextView
+                android:id="@+id/txtDiaChiHD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="237/72 Trần Văn Đang, Phường 11, Quận 3, TP.Hồ Chí Minh"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/txtTenNguoiNhanHD"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/txtSoDienThoaiHD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0162659965"
+                android:layout_below="@+id/txtDiaChiHD"
+                android:textColor="#000"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/txtPtvcHD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giao hàng tiết kiệm"
+                android:layout_below="@+id/txtSoDienThoaiHD"
+                android:textColor="#000"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/txtNgayHD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12/12/2019"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/txtPtvcHD"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/txtTongCongHD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtTrangThaiHD"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="5dp"
+                android:text="Tổng cộng: "
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/txtTrangThaiHD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đang chờ giao"
+                android:layout_below="@+id/txtNgayHD"
+                android:layout_centerHorizontal="true"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/txtGiaTienHD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtTrangThaiHD"
+                android:layout_toRightOf="@+id/txtTongCongHD"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:text="60000"
+                android:textColor="#ff0000"
+                android:textSize="20dp" />
+            <ImageView
+                android:id="@+id/imgWritting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/writing"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

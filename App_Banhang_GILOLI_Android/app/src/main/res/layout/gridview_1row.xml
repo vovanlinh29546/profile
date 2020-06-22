@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="5dp"
+    app:contentPadding="10dp"
+    android:layout_height="match_parent"
+    android:id="@+id/cardviewDM">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imv_gridview_1row"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:src="@drawable/add_image"/>
+        <ProgressBar
+            android:id="@+id/progressdanhmuc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/></FrameLayout>
+    <TextView
+        android:id="@+id/tv_gridview_1row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="13dp"
+        android:paddingTop="10dp"
+        android:textColor="#ff8008"
+        android:text="BRAND"/></LinearLayout>
+</androidx.cardview.widget.CardView>

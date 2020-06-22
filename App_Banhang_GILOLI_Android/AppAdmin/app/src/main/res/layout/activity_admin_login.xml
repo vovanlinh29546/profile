@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".AdminLogin">
+
+    <ImageView
+        android:id="@+id/logo_splashcreen"
+        android:layout_width="match_parent"
+        android:layout_height="113dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/logo_manhinhcho" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:paddingTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tài khoản: "
+                android:textColor="#000"
+                android:textSize="18dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edtusername"
+                    android:textColor="#000"
+                    android:textColorHint="#000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mật khẩu: "
+                android:textColor="#000"
+                android:textSize="18dp"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true"
+                app:counterMaxLength="16"
+                android:id="@+id/inputmk"
+                app:counterEnabled="true"
+                >
+                <EditText
+                    android:maxLength="16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edtpass"
+                    android:inputType="textPassword"
+                    android:textColor="#000"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:layout_marginBottom="10dp"
+            >
+            <CheckBox
+                android:id="@+id/cbluu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lưu thông tin?"
+                android:textColor="#000"/>
+        </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/btndangnhap"
+                android:text="Đăng nhập"
+                android:layout_gravity="center"
+                android:textColor="#ffffff"
+               android:background="@drawable/boderradius_button"
+                />
+
+
+
+        <androidx.legacy.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <View
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="0.8"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#ff8008"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="#0088ff"
+                android:layout_weight="2"
+                android:textAllCaps="false"
+                android:text="Điều khoản và chính sách GiLoLi"
+                android:gravity="center"/>
+
+            <View
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="0.8"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#ff8008" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

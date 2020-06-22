@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Thêm Thông Báo"
+        android:textColor="#ffffff"
+        android:padding="15dp"
+        android:background="#ff8008"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <ImageView
+        android:layout_marginTop="15dp"
+        android:id="@+id/imgThongBao"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/add__image"
+        />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edt_mathongbao"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:hint="Mã thông báo"
+            /></com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edtTieuDe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Nhập tiêu đề "
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterMaxLength="120"
+        app:counterEnabled="true">
+        <EditText
+            android:id="@+id/edtNoiDung"
+            android:maxLength="120"
+            android:minHeight="150dp"
+            android:gravity="start"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Nhập nội dung"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

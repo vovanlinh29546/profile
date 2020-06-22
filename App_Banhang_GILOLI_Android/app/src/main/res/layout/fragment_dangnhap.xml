@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:paddingTop="30dp"
+        android:id="@+id/input_loginemail"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:id="@+id/edt_loginEmail"
+            android:hint="Email/Số điện thoại"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        app:passwordToggleEnabled="true"
+        app:counterEnabled="true"
+        android:id="@+id/input_loginmatkhau"
+        app:counterMaxLength="16"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="16"
+            android:inputType="textPassword"
+            android:layout_margin="7dp"
+            android:id="@+id/edt_loginMatKhau"
+            android:hint="Mật khẩu"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="17dp"
+        android:id="@+id/btnDangNhap"
+        android:textAllCaps="false"
+        android:layout_margin="15dp"
+        android:textColor="#ffffff"
+        android:text="Đăng Nhập"
+        android:background="#ff8008"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="#0088ff"
+        android:textAllCaps="false"
+        android:id="@+id/txtQuenMk"
+        android:text="Quên mật khẩu?"
+        android:gravity="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <View
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#ff8008"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="2"
+        android:textAllCaps="false"
+        android:text="Hoặc đăng nhập với"
+        android:gravity="center"/>
+        <View
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#ff8008" />
+    </LinearLayout>
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/loginbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+   />
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/signGoogle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp" />
+
+
+
+
+
+</LinearLayout>

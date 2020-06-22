@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/lv1"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:padding="10dp">
+            <ImageView
+                android:padding="10dp"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:id="@+id/img_item_giohang"
+                android:src="@drawable/ic_launcher_background">
+
+            </ImageView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/lv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="4"
+            android:id="@+id/lv2"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ten Hàng"
+                android:textSize="25dp"
+                android:id="@+id/txtGioHang_TenHang"
+                android:textColor="#000"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Cung cấp bỏi Giloli Trading "></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:id="@+id/txtGioHang_GiaTien"
+                android:text="Gia Tien"></TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/img_item_minus"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/icons8minus26"></ImageButton>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="****"
+                    android:id="@+id/txt_GioHang_SoLuong"
+                    android:layout_margin="10dp"></TextView>
+
+                <ImageButton
+                    android:id="@+id/img_item_add"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/add26png"></ImageButton>
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+android:layout_marginRight="5dp"
+            android:layout_width="30dp"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="3"
+                android:id="@+id/img_item_xoahang"
+                android:src="@drawable/ic_close_black_24dp"></ImageView>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

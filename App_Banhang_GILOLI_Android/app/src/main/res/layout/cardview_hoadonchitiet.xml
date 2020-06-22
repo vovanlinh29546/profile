@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f2f2f2">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:contentPadding="5dp"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/imgSanPham"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/coin"/>
+            <TextView
+                android:id="@+id/txtTenSanPham"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:layout_toRightOf="@+id/imgSanPham"
+                android:text="333333333333333333333333333333333333333333333333333333333333333333333333333333"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/txtCunCapBoiGiloli"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cung cấp bởi Giloli"
+                android:layout_below="@+id/txtTenSanPham"
+                android:layout_toRightOf="@+id/imgSanPham"
+                android:layout_marginLeft="10dp"
+                />
+            <TextView
+                android:id="@+id/txtGiaSanPham"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10,000đ"
+                android:textColor="#ff0000"
+                android:layout_below="@+id/txtCunCapBoiGiloli"
+                android:layout_toRightOf="@+id/imgSanPham"
+                android:layout_marginLeft="10dp"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

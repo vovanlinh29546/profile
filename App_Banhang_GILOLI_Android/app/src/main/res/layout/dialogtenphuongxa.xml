@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:layout_gravity="left"
+            android:layout_weight="9"
+            android:text="Chọn Quận Phường/Xã"></TextView>
+        <ImageButton
+            android:layout_weight="1"
+            android:layout_alignParentRight="true"
+            android:id="@+id/imgexitpx"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_close_black_24dp"></ImageButton>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <SearchView
+            android:id="@+id/searchtenphuongxa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:queryHint="Tìm Tên Phường xã"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:iconifiedByDefault="false"
+            android:elevation="10dp"
+            android:textSize="30dp"
+            android:background="@drawable/bg_searchview_trangchu"
+
+            />
+
+
+    </LinearLayout>   <ListView
+        android:id="@+id/rcv_tenPhuongXa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+</LinearLayout>

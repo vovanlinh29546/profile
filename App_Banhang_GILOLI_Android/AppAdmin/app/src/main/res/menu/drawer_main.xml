@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/khachhang"
+            android:title="Quản lí khách hàng"
+            android:icon="@drawable/customer"/>
+        <item
+            android:id="@+id/phanloai"
+            android:title="Quản lí phân loại"
+            android:icon="@drawable/category"/>
+        <item
+            android:id="@+id/hoadon"
+            android:title="Quản lí hóa đơn"
+            android:icon="@drawable/bill"/>
+
+        <item
+            android:id="@+id/sanpham"
+            android:title="Quản lí sản phẩm"
+            android:icon="@drawable/product"/>
+
+        <item
+            android:id="@+id/thongbao"
+            android:title="Quản lí thông báo"
+            android:icon="@drawable/notification"/>
+
+        <item android:title="Điều hướng khác">
+        <menu>
+            <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/thongke"
+            android:title="Thống kê"
+            android:icon="@drawable/statistics"
+            />
+                <item
+                    android:id="@+id/diachi"
+                    android:title="Quản lý địa chỉ"
+                    android:icon="@drawable/ic_add_location_black_24dp"
+                    />
+        <item
+            android:id="@+id/thoat"
+            android:title="Thoát"
+            android:icon="@drawable/logout"/>
+            </group>
+        </menu>
+        </item>
+    </group>
+</menu>

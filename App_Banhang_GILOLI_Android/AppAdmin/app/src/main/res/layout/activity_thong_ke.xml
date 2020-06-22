@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThongKeActivity"
+    android:orientation="vertical"
+    >
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff8008">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back_black_24dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thống kê"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:layout_marginLeft="20dp"/>
+    </Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Theo ngày: "
+            android:textSize="20dp"
+            android:textColor="#000"/>
+        <EditText
+            android:id="@+id/edtTheoNgay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:drawableEnd="@drawable/icon_calendar"
+            android:hint="Chọn ngày"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Theo tháng: "
+            android:textSize="20dp"
+            android:textColor="#000"/>
+        <EditText
+            android:id="@+id/edtTheoThang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập tháng"
+            android:layout_marginLeft="4dp"
+            android:phoneNumber="true"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Theo năm: "
+            android:textSize="20dp"
+            android:textColor="#000"/>
+        <EditText
+            android:id="@+id/edtTheoNam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập năm"
+            android:layout_marginLeft="18dp"
+            android:phoneNumber="true"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnThongKeInside"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_button_thongke"
+        android:layout_margin="10dp"
+        android:text="Thống kê theo ngày"
+        android:textColor="#fff"/>
+    <Button
+        android:id="@+id/btnThongKeThangInside"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_button_thongke"
+        android:layout_margin="10dp"
+        android:text="Thống kê theo tháng"
+        android:textColor="#fff"/>
+    <Button
+        android:id="@+id/btnThongKeNamInside"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_button_thongke"
+        android:layout_margin="10dp"
+        android:text="Thống kê theo năm"
+        android:textColor="#fff"/>
+    <RelativeLayout
+        android:id="@+id/relativeThongKe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:layout_margin="15dp"
+        android:background="#6dd5ed"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/txtTongTienThongKe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ngày bạn chọn không có hoá đơn"
+            android:layout_centerInParent="true"
+            android:textSize="20dp"
+            android:textColor="#2193b0"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+</LinearLayout>

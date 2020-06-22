@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Giloli</string>
+    <string name="facebook_app_id">593485807778559</string>
+    <string name="fb_login_protocol_scheme">fb593485807778559</string>
+    <string name="server_client_id">445512387976-tt062podvh4hdf6911sqhfjalel4vijf.apps.googleusercontent.com</string>
+    <string name="title_activity_google_maps">Map</string>
+
+</resources>

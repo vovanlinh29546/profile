@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    >
+    <Toolbar
+        android:id="@+id/toolBarTrangChu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#414345">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:background="@drawable/logo_manhinhcho"
+                android:layout_gravity="left"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <SearchView
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:queryHint="Hôm nay bạn tìm gì..."
+                android:iconifiedByDefault="false"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:elevation="10dp"
+                android:background="@drawable/bg_searchview_trangchu"
+                android:layout_weight="1"
+                />
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:id="@+id/trangchu_giohang">
+    <ImageView
+        android:id="@+id/img_shop"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_shopping"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        android:contentDescription="bell"
+        android:layout_gravity="center_vertical"
+        />
+    <TextView
+        android:id="@+id/txtcount_shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="0"
+        android:layout_alignTop="@id/img_shop"
+        android:layout_alignRight="@id/img_shop"
+        android:minWidth="17sp"
+        android:textSize="12sp"
+        android:background="@drawable/count_rount"
+        android:visibility="gone"></TextView>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ViewFlipper
+                android:id="@+id/ViewFlipper"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true">
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:id="@+id/imgDanhMuc"
+                        android:layout_width="100dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/category" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imgDanhMuc"
+                        android:layout_centerHorizontal="true"
+                        android:text="Danh mục"
+                        android:textColor="#000"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/relativeDonHang">
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:id="@+id/imgDonHang"
+                        android:layout_width="100dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/bill" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imgDonHang"
+                        android:layout_centerHorizontal="true"
+                        android:text="Đơn hàng"
+                        android:textColor="#000"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true">
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:id="@+id/imgVitri"
+                        android:layout_width="100dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/maplocation" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imgVitri"
+                        android:layout_centerHorizontal="true"
+                        android:text="Vị trí"
+                        android:textColor="#000"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#CCCCCC" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="10dp"
+                    android:text="Danh mục sản phẩm"
+                    android:textColor="#ff8008"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtXemThem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:text="Xem thêm"
+                    android:textColor="#0033FF"
+                    android:textSize="15dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/txtXemThem"
+                    android:background="#ff8008" />
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewDanhMuc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#cccccc" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_margin="10dp"
+                android:text="Sản phẩm"
+                android:textColor="#ff8008"
+                android:textSize="15dp"
+                android:textStyle="bold"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ff8008" />
+            <com.example.giloli.ExpandalableHeightGridView
+                android:background="#f2f2f2"
+                android:id="@+id/gridviewSanPham1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:horizontalSpacing="10dp"
+                android:isScrollContainer="false"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="10dp"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

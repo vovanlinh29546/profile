@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp">
+        <TextView
+            android:id="@+id/stt_sanpham"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="25dp"
+            android:padding="5dp"
+            android:gravity="center_vertical"
+            android:text="1"/>
+        <View
+            android:id="@+id/daugach1"
+            android:layout_gravity="center"
+            android:layout_width="1.5dp"
+            android:layout_toRightOf="@id/stt_sanpham"
+            android:layout_height="95dp"
+            android:layout_marginRight="7dp"
+            android:background="#ff8008" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/masanpham"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Mã sản phẩm: "
+            android:padding="2dp"
+            android:layout_toRightOf="@id/daugach1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/masanpham_1row"
+            android:text="                   Mã"
+            android:textAllCaps="true"
+            android:padding="2dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/masanpham" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tensanpham"
+            android:layout_below="@id/masanpham"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Tên sản phẩm: "
+            android:padding="2dp"
+            android:layout_toRightOf="@id/daugach1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tensanpham_1row"
+            android:text="Tên "
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:padding="2dp"
+            android:layout_below="@id/masanpham"
+            android:layout_toRightOf="@id/tensanpham" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tonkho"
+            android:layout_below="@id/tensanpham"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Tồn kho: "
+            android:padding="2dp"
+            android:layout_toRightOf="@id/daugach1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tonkho_1row"
+            android:text="          tồn kho "
+            android:padding="2dp"
+            android:layout_below="@id/tensanpham"
+            android:layout_toRightOf="@id/tonkho" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/giatien"
+            android:layout_below="@id/tonkho"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Giá niêm yết: "
+            android:padding="2dp"
+            android:layout_toRightOf="@id/daugach1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/giatien_1row"
+            android:text="          giá niêm yết "
+            android:padding="2dp"
+            android:layout_below="@id/tonkho"
+            android:layout_toRightOf="@id/giatien" />
+
+        <ImageView
+            android:id="@+id/popup_sanpham"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="3dp"
+            android:layout_marginRight="4dp"
+            android:src="@drawable/icon_popupmenu" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

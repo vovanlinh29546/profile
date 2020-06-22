@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.giloli.MainActivity">
+   <FrameLayout
+       android:id="@+id/fragment_container_main"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:background="#ffffff"
+       android:layout_above="@+id/bottom_navi_main">
+   </FrameLayout>
+   <View
+       android:layout_above="@id/bottom_navi_main"
+       android:layout_gravity="center"
+       android:layout_width="match_parent"
+       android:layout_height="1.1dp"
+       android:background="#ff8008" />
+   <com.google.android.material.bottomnavigation.BottomNavigationView
+       android:id="@+id/bottom_navi_main"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:menu="@menu/menu_main"
+       android:layout_alignParentBottom="true"
+       android:background="@drawable/bg_bottom_menu"
+       app:labelVisibilityMode="labeled"
+       app:itemIconTint="@drawable/color_item_bottomnavigation"
+       app:itemTextColor="@drawable/color_item_bottomnavigation"/>
+</RelativeLayout>

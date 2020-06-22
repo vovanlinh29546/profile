@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.giloliadmin">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Quản lí GiLoLi"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".Top10BanDatActivity"></activity>
+        <activity android:name=".ThongKeActivity" />
+        <activity android:name=".HienChiTietHoaDonActivity" />
+        <activity
+            android:name=".Edit_Activity.suaLoai_activity"
+            android:label=""
+            android:theme="@style/Theme.AppCompat.Light.Dialog.MinWidth" />
+        <activity
+            android:name=".Edit_Activity.suaSanPham_activity"
+            android:label=""
+            android:theme="@style/Theme.AppCompat.Light.Dialog.MinWidth" />
+        <activity
+            android:name=".Dialog.NguoiDungChiTiet"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.Dialog.MinWidth" />
+        <activity
+            android:name=".Edit_Activity.suaThongBao_activity"
+            android:label=""
+            android:theme="@style/Theme.AppCompat.Light.Dialog.MinWidth" />
+        <activity
+            android:name=".AdminLogin"
+            android:theme="@style/AppThemeLogin">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

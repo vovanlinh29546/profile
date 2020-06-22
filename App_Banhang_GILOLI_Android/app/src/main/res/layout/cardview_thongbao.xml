@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/add_image"
+            android:layout_width="60dp"
+            android:layout_margin="10dp"
+            android:layout_height="60dp"
+            android:id="@+id/imv_thongbao"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_tieude"
+            android:textColor="#ff8008"
+            android:textSize="22dp"
+            android:text="Tiêu đề: "
+            android:paddingTop="10dp"
+            android:layout_toRightOf="@id/imv_thongbao"/>
+        <View
+            android:layout_width="wrap_content"
+            android:background="#ff8008"
+            android:layout_toRightOf="@id/imv_thongbao"
+            android:layout_below="@id/tv_tieude"
+            android:layout_height="1dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_noidung"
+            android:layout_below="@id/tv_tieude"
+            android:layout_toRightOf="@id/imv_thongbao"
+            android:textColor="#787878"
+            android:text="Nội dung: "
+            android:padding="2dp"
+         />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

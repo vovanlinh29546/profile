@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Chỉnh sửa Sản Phẩm"
+        android:textColor="#ffffff"
+        android:padding="15dp"
+        android:background="#ff8008"/>
+    <TextView
+        android:id="@+id/tvSuaComplete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        android:textSize="20dp"
+        android:textColor="#ff0000"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/img_suaSanPham"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/add__image"/>
+        <ProgressBar
+            android:id="@+id/progress_anhsp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/></FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chọn mã loại"
+            android:textColor="#000"
+            android:textSize="20dp"/>
+        <Spinner
+            android:id="@+id/spn_suaMaLoai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+        <EditText
+            android:id="@+id/tv_suaMaSanPham"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:hint="Mã sản phẩm cần sửa"/>
+        <EditText
+            android:id="@+id/edt_suaTenSanPham"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập tên sản phẩm"/>
+        <EditText
+            android:id="@+id/edt_suaSLSanPham"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Nhập số lượng sản phẩm"/>
+        <EditText
+            android:id="@+id/edt_suaGiaSanPham"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Nhập giá sản phẩm"/>
+        <EditText
+            android:id="@+id/edt_suaMoTaSanPham"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập mô tả sản phẩm"/>
+        <EditText
+            android:id="@+id/edt_suaKLSanPham"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập trọng lượng sản phẩm"/>
+        <EditText
+            android:id="@+id/edt_suaCCSanPham"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập nhà cung cấp sản phẩm"/>
+        <EditText
+            android:id="@+id/edt_suaTHSanPham"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập thương hiệu sản phẩm"/>
+        <EditText
+            android:id="@+id/edt_suaHDSanPham"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập hướng dẫn sản phẩm"/>
+        <Button
+            android:id="@+id/bt_suasanpham"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:textColor="#fff"
+            android:background="@drawable/boderradius_button"
+            android:text="Chỉnh Sửa"/>
+
+    </LinearLayout></ScrollView>
+</LinearLayout>

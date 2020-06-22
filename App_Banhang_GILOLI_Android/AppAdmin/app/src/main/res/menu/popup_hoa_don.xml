@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_choDuyet"
+        android:enabled="true"
+        android:title="Chờ duyệt đơn" />
+    <item android:id="@+id/action_daDuyet"
+        android:enabled="true"
+        android:title="Đã duyệt đơn" />
+
+    <item android:id="@+id/action_giaoHang"
+        android:enabled="true"
+        android:title="Giao hàng" />
+    <item android:id="@+id/action_daGiaoHang"
+    android:enabled="true"
+    android:title="Đã giao hàng" />
+
+    <item android:id="@+id/action_huyDonHang"
+        android:enabled="true"
+        android:title="Chấp nhận huỷ đơn" />
+</menu>
